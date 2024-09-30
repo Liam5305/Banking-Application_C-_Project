@@ -20,7 +20,9 @@ namespace Banking_App_v0._1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtPassword.Text == "123")
+            string loginPass = "123";
+
+            if (txtPassword.Text == loginPass)
             {
                 txtPassword.BackColor = Color.Green;
                 this.Hide();

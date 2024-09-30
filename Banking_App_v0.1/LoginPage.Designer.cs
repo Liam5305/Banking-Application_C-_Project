@@ -36,7 +36,7 @@
             // 
             // btnCancelLogin
             // 
-            this.btnCancelLogin.Location = new System.Drawing.Point(69, 218);
+            this.btnCancelLogin.Location = new System.Drawing.Point(183, 212);
             this.btnCancelLogin.Name = "btnCancelLogin";
             this.btnCancelLogin.Size = new System.Drawing.Size(85, 21);
             this.btnCancelLogin.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(160, 218);
+            this.btnLogin.Location = new System.Drawing.Point(274, 212);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(85, 21);
             this.btnLogin.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(69, 175);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(176, 20);
+            this.txtPassword.Size = new System.Drawing.Size(406, 20);
             this.txtPassword.TabIndex = 3;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPassword.UseSystemPasswordChar = true;
@@ -70,7 +70,7 @@
             this.txtLogo.Multiline = true;
             this.txtLogo.Name = "txtLogo";
             this.txtLogo.ReadOnly = true;
-            this.txtLogo.Size = new System.Drawing.Size(176, 138);
+            this.txtLogo.Size = new System.Drawing.Size(406, 138);
             this.txtLogo.TabIndex = 4;
             this.txtLogo.Text = "Fake Banking .Co";
             this.txtLogo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -79,7 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 344);
+            this.ClientSize = new System.Drawing.Size(544, 264);
             this.Controls.Add(this.txtLogo);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.btnLogin);
