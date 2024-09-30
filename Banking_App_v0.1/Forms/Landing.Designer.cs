@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Landing));
             this.btnAccounts = new System.Windows.Forms.Button();
             this.btnAdminPanel = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
@@ -85,8 +86,8 @@
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnAdminPanel);
             this.Controls.Add(this.btnAccounts);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Landing";
-            this.Text = "Form1";
             this.ResumeLayout(false);
 
         }

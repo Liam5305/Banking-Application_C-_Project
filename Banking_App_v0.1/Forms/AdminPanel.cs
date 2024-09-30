@@ -10,17 +10,18 @@ using System.Windows.Forms;
 
 namespace Banking_App_v0._1
 {
-    public partial class AccountsReceiveMoney : Form
+    public partial class AdminPanel : Form
     {
-        public AccountsReceiveMoney()
+        public AdminPanel()
         {
             InitializeComponent();
         }
 
-        private void btnConfirmReceive_Click(object sender, EventArgs e)
+        private void homePageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            this.Close();
+            this.Hide();
+            Landing landing = new Landing();
+            landing.ShowDialog();
         }
     }
 }

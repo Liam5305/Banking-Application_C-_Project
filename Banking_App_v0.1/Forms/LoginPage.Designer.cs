@@ -28,64 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             this.btnCancelLogin = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtLogo = new System.Windows.Forms.TextBox();
+            this.lblVersionControl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCancelLogin
             // 
-            this.btnCancelLogin.Location = new System.Drawing.Point(183, 212);
+            this.btnCancelLogin.Location = new System.Drawing.Point(108, 194);
             this.btnCancelLogin.Name = "btnCancelLogin";
             this.btnCancelLogin.Size = new System.Drawing.Size(85, 21);
             this.btnCancelLogin.TabIndex = 0;
-            this.btnCancelLogin.Text = "Cancel";
+            this.btnCancelLogin.Text = "Exit\r\n";
             this.btnCancelLogin.UseVisualStyleBackColor = true;
             this.btnCancelLogin.Click += new System.EventHandler(this.btnCancelLogin_Click);
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(274, 212);
+            this.btnLogin.Location = new System.Drawing.Point(12, 194);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(85, 21);
             this.btnLogin.TabIndex = 1;
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Text = "Sign In";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(69, 175);
+            this.txtPassword.Location = new System.Drawing.Point(12, 156);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(406, 20);
+            this.txtPassword.Size = new System.Drawing.Size(181, 20);
             this.txtPassword.TabIndex = 3;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtLogo
             // 
+            this.txtLogo.AcceptsReturn = true;
+            this.txtLogo.AcceptsTab = true;
             this.txtLogo.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
-            this.txtLogo.Location = new System.Drawing.Point(69, 31);
+            this.txtLogo.Location = new System.Drawing.Point(12, 12);
             this.txtLogo.Multiline = true;
             this.txtLogo.Name = "txtLogo";
             this.txtLogo.ReadOnly = true;
-            this.txtLogo.Size = new System.Drawing.Size(406, 138);
+            this.txtLogo.Size = new System.Drawing.Size(181, 138);
             this.txtLogo.TabIndex = 4;
             this.txtLogo.Text = "Fake Banking .Co";
             this.txtLogo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblVersionControl
+            // 
+            this.lblVersionControl.AutoSize = true;
+            this.lblVersionControl.Location = new System.Drawing.Point(12, 239);
+            this.lblVersionControl.Name = "lblVersionControl";
+            this.lblVersionControl.Size = new System.Drawing.Size(35, 13);
+            this.lblVersionControl.TabIndex = 5;
+            this.lblVersionControl.Text = "label1";
             // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 264);
+            this.Controls.Add(this.lblVersionControl);
             this.Controls.Add(this.txtLogo);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCancelLogin);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginPage";
-            this.Text = "Form1";
+            this.Text = "Banking Application";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,6 +112,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtLogo;
+        private System.Windows.Forms.Label lblVersionControl;
     }
 }
 

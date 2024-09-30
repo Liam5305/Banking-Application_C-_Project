@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace Banking_App_v0._1
 {
@@ -16,9 +17,15 @@ namespace Banking_App_v0._1
         public LoginPage()
         {
             InitializeComponent();
+            SetVersionLabel();
+        }
+        private void SetVersionLabel()
+        {
+            Version version = Assembly.GetExecutingAssembly().GetName().Version;
+            lblVersionControl.Text = $"Version: {version}";
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private async void btnLogin_Click(object sender, EventArgs e)
         {
             string loginPass = "123";
 
@@ -33,6 +40,8 @@ namespace Banking_App_v0._1
             else
             {
                 txtPassword.BackColor = Color.Red;
+                await Task.Delay(300);
+                txtPassword.BackColor = SystemColors.Window;
                 //Console.WriteLine("Failed");
             }
         }
@@ -41,6 +50,5 @@ namespace Banking_App_v0._1
         {
             this.Close();
         }
-
     }
 }
