@@ -55,7 +55,7 @@ namespace Banking_App_v0._1
 
         private void btnCancelLogin_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you sure you want to close?","Confirm Close", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?","Confirm Exit", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
                 this.Close();
