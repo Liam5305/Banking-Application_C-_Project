@@ -34,6 +34,8 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtLogo = new System.Windows.Forms.TextBox();
             this.lblVersionControl = new System.Windows.Forms.Label();
+            this.imgBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBox)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancelLogin
@@ -76,23 +78,34 @@
             this.txtLogo.ReadOnly = true;
             this.txtLogo.Size = new System.Drawing.Size(181, 138);
             this.txtLogo.TabIndex = 4;
-            this.txtLogo.Text = "Fake Banking .Co";
+            this.txtLogo.Text = "Oxton Banking Co.";
             this.txtLogo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblVersionControl
             // 
             this.lblVersionControl.AutoSize = true;
-            this.lblVersionControl.Location = new System.Drawing.Point(12, 239);
+            this.lblVersionControl.Location = new System.Drawing.Point(12, 218);
             this.lblVersionControl.Name = "lblVersionControl";
             this.lblVersionControl.Size = new System.Drawing.Size(35, 13);
             this.lblVersionControl.TabIndex = 5;
             this.lblVersionControl.Text = "label1";
+            // 
+            // imgBox
+            // 
+            this.imgBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imgBox.InitialImage = null;
+            this.imgBox.Location = new System.Drawing.Point(199, 12);
+            this.imgBox.Name = "imgBox";
+            this.imgBox.Size = new System.Drawing.Size(333, 240);
+            this.imgBox.TabIndex = 6;
+            this.imgBox.TabStop = false;
             // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 264);
+            this.Controls.Add(this.imgBox);
             this.Controls.Add(this.lblVersionControl);
             this.Controls.Add(this.txtLogo);
             this.Controls.Add(this.txtPassword);
@@ -101,6 +114,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginPage";
             this.Text = "Banking Application";
+            ((System.ComponentModel.ISupportInitialize)(this.imgBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,6 +127,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtLogo;
         private System.Windows.Forms.Label lblVersionControl;
+        private System.Windows.Forms.PictureBox imgBox;
     }
 }
 

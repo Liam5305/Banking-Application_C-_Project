@@ -46,6 +46,7 @@
             this.btnSendMoney.TabIndex = 0;
             this.btnSendMoney.Text = "Send Money";
             this.btnSendMoney.UseVisualStyleBackColor = true;
+            this.btnSendMoney.Click += new System.EventHandler(this.btnSendMoney_Click);
             // 
             // menuStrip1
             // 
@@ -71,7 +72,6 @@
             this.txtBankBalance.ReadOnly = true;
             this.txtBankBalance.Size = new System.Drawing.Size(141, 20);
             this.txtBankBalance.TabIndex = 5;
-            this.txtBankBalance.Text = "£4,000";
             // 
             // lblBankBalance
             // 

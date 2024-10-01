@@ -47,6 +47,8 @@
             // 
             // cmboReceiveMoneys
             // 
+            this.cmboReceiveMoneys.BackColor = System.Drawing.SystemColors.Control;
+            this.cmboReceiveMoneys.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmboReceiveMoneys.Items.AddRange(new object[] {
             "£5",
             "£10",
@@ -63,6 +65,8 @@
             this.cmboReceiveMoneys.Name = "cmboReceiveMoneys";
             this.cmboReceiveMoneys.Size = new System.Drawing.Size(121, 21);
             this.cmboReceiveMoneys.TabIndex = 0;
+            this.cmboReceiveMoneys.Text = "Select an Item";
+            this.cmboReceiveMoneys.SelectedIndexChanged += new System.EventHandler(this.cmboReceiveMoneys_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
@@ -79,7 +83,6 @@
             this.homePageToolStripMenuItem.Name = "homePageToolStripMenuItem";
             this.homePageToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.homePageToolStripMenuItem.Text = "Home Page";
-            this.homePageToolStripMenuItem.Click += new System.EventHandler(this.homePageToolStripMenuItem_Click);
             // 
             // AccountsReceiveMoney
             // 

@@ -32,7 +32,6 @@
             this.btnAccounts = new System.Windows.Forms.Button();
             this.btnAdminPanel = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnUsers = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAccounts
@@ -66,23 +65,11 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // btnUsers
-            // 
-            this.btnUsers.AccessibleRole = System.Windows.Forms.AccessibleRole.WhiteSpace;
-            this.btnUsers.Location = new System.Drawing.Point(12, 84);
-            this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(102, 43);
-            this.btnUsers.TabIndex = 4;
-            this.btnUsers.Text = "Users";
-            this.btnUsers.UseVisualStyleBackColor = true;
-            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
-            // 
             // Landing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(578, 336);
-            this.Controls.Add(this.btnUsers);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnAdminPanel);
             this.Controls.Add(this.btnAccounts);
@@ -97,6 +84,5 @@
         private System.Windows.Forms.Button btnAccounts;
         private System.Windows.Forms.Button btnAdminPanel;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button btnUsers;
     }
 }

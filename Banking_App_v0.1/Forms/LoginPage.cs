@@ -18,6 +18,7 @@ namespace Banking_App_v0._1
         {
             InitializeComponent();
             SetVersionLabel();
+            ImgBoxSetUp();
         }
         private void SetVersionLabel()
         {
@@ -46,9 +47,19 @@ namespace Banking_App_v0._1
             }
         }
 
+        private void ImgBoxSetUp()
+        {
+            imgBox.ImageLocation = @"C:\Users\liamr\source\repos\Banking-Application_C-_Project\Banking_App_v0.1\Resources\BankingAppLogo.png";
+            imgBox.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
         private void btnCancelLogin_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show("Are you sure you want to close?","Confirm Close", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

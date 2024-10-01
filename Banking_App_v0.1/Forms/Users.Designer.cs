@@ -39,13 +39,15 @@
             this.lblRoleGiven = new System.Windows.Forms.Label();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.txtNewUser = new System.Windows.Forms.TextBox();
+            this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.homePageToolStripMenuItem});
+            this.homePageToolStripMenuItem,
+            this.backToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(489, 24);
@@ -133,6 +135,13 @@
             this.txtNewUser.Text = "Enter new user";
             this.txtNewUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // backToolStripMenuItem
+            // 
+            this.backToolStripMenuItem.Name = "backToolStripMenuItem";
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.backToolStripMenuItem.Text = "Back";
+            this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
+            // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,5 +178,6 @@
         private System.Windows.Forms.Label lblRoleGiven;
         private System.Windows.Forms.Button btnNewUser;
         private System.Windows.Forms.TextBox txtNewUser;
+        private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
     }
 }

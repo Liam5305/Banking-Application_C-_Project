@@ -1,5 +1,4 @@
-﻿using Banking_App_v0._1.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Banking_App_v0._1
+namespace Banking_App_v0._1.Forms
 {
-    public partial class AdminPanel : Form
+    public partial class MaintenancePopUp : Form
     {
-        public AdminPanel()
+        public MaintenancePopUp()
         {
             InitializeComponent();
         }
@@ -25,18 +24,11 @@ namespace Banking_App_v0._1
             landing.ShowDialog();
         }
 
-        private void btnAddUsers_Click(object sender, EventArgs e)
-        {
-             this.Hide();
-             Users users = new Users();
-             users.ShowDialog();
-        }
-
-        private void btnMaintenance_Click(object sender, EventArgs e)
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MaintenancePopUp mPopUp = new MaintenancePopUp();
-            mPopUp.ShowDialog();
+            AdminPanel adminPanel = new AdminPanel();
+            adminPanel.ShowDialog();
         }
     }
 }
