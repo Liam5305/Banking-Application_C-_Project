@@ -28,8 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountsReceiveMoney));
             this.btnConfirmReceive = new System.Windows.Forms.Button();
             this.cmboReceiveMoneys = new System.Windows.Forms.ComboBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.homePageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnConfirmReceive
@@ -43,6 +47,8 @@
             // 
             // cmboReceiveMoneys
             // 
+            this.cmboReceiveMoneys.BackColor = System.Drawing.SystemColors.Control;
+            this.cmboReceiveMoneys.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmboReceiveMoneys.Items.AddRange(new object[] {
             "£5",
             "£10",
@@ -59,6 +65,24 @@
             this.cmboReceiveMoneys.Name = "cmboReceiveMoneys";
             this.cmboReceiveMoneys.Size = new System.Drawing.Size(121, 21);
             this.cmboReceiveMoneys.TabIndex = 0;
+            this.cmboReceiveMoneys.Text = "Select an Item";
+            this.cmboReceiveMoneys.SelectedIndexChanged += new System.EventHandler(this.cmboReceiveMoneys_SelectedIndexChanged);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.homePageToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(272, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // homePageToolStripMenuItem
+            // 
+            this.homePageToolStripMenuItem.Name = "homePageToolStripMenuItem";
+            this.homePageToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.homePageToolStripMenuItem.Text = "Home Page";
             // 
             // AccountsReceiveMoney
             // 
@@ -67,9 +91,15 @@
             this.ClientSize = new System.Drawing.Size(272, 291);
             this.Controls.Add(this.cmboReceiveMoneys);
             this.Controls.Add(this.btnConfirmReceive);
+            this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "AccountsReceiveMoney";
             this.Text = "AccountsReceiveMoney";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -77,5 +107,7 @@
 
         private System.Windows.Forms.Button btnConfirmReceive;
         private System.Windows.Forms.ComboBox cmboReceiveMoneys;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem homePageToolStripMenuItem;
     }
 }

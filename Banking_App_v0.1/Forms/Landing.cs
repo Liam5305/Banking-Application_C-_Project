@@ -19,7 +19,9 @@ namespace Banking_App_v0._1
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            LoginPage loginPage = new LoginPage();
+            loginPage.ShowDialog();
         }
 
         private void btnAccounts_Click(object sender, EventArgs e)
@@ -36,12 +38,12 @@ namespace Banking_App_v0._1
             adminPanel.ShowDialog();
         }
 
-        private void btnUsers_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Users users = new Users();
-            users.ShowDialog();
-        }
+        //private void btnUsers_Click(object sender, EventArgs e)
+        //{
+        //    this.Hide();
+        //    Users users = new Users();
+        //    users.ShowDialog();
+        //}
 
         //private void btnMembers_Click(object sender, EventArgs e)
         //{

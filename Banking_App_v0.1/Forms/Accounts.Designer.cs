@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accounts));
             this.btnSendMoney = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homePageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,6 +46,7 @@
             this.btnSendMoney.TabIndex = 0;
             this.btnSendMoney.Text = "Send Money";
             this.btnSendMoney.UseVisualStyleBackColor = true;
+            this.btnSendMoney.Click += new System.EventHandler(this.btnSendMoney_Click);
             // 
             // menuStrip1
             // 
@@ -70,8 +72,6 @@
             this.txtBankBalance.ReadOnly = true;
             this.txtBankBalance.Size = new System.Drawing.Size(141, 20);
             this.txtBankBalance.TabIndex = 5;
-            this.txtBankBalance.Text = "£4,000";
-            //this.txtBankBalance.TextChanged += new System.EventHandler(this.txtBankBalance_TextChanged);
             // 
             // lblBankBalance
             // 
@@ -102,6 +102,7 @@
             this.Controls.Add(this.txtBankBalance);
             this.Controls.Add(this.btnSendMoney);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Accounts";
             this.Text = "Accounts";

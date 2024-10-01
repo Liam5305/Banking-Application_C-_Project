@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Banking_App_v0._1.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Banking_App_v0._1
 {
-    public partial class Accounts : Form
+    public partial class AdminPanel : Form
     {
-        public Accounts()
+        public AdminPanel()
         {
             InitializeComponent();
         }
@@ -24,10 +25,18 @@ namespace Banking_App_v0._1
             landing.ShowDialog();
         }
 
-        private void btnReceiveMoney_Click(object sender, EventArgs e)
+        private void btnAddUsers_Click(object sender, EventArgs e)
         {
-            AccountsReceiveMoney accountsRecieveMoney = new AccountsReceiveMoney();
-            accountsRecieveMoney.ShowDialog();
+             this.Hide();
+             Users users = new Users();
+             users.ShowDialog();
+        }
+
+        private void btnMaintenance_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MaintenancePopUp mPopUp = new MaintenancePopUp();
+            mPopUp.ShowDialog();
         }
     }
 }
