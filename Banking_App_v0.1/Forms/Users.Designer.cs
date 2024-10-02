@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homePageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtUsersDesc = new System.Windows.Forms.TextBox();
             this.cmbBoxUsers = new System.Windows.Forms.ComboBox();
             this.btnPopulateUsers = new System.Windows.Forms.Button();
@@ -39,7 +40,8 @@
             this.lblRoleGiven = new System.Windows.Forms.Label();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.txtNewUser = new System.Windows.Forms.TextBox();
-            this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSend = new System.Windows.Forms.Button();
+            this.cmbSend = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +62,13 @@
             this.homePageToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.homePageToolStripMenuItem.Text = "Home Page";
             this.homePageToolStripMenuItem.Click += new System.EventHandler(this.homePageToolStripMenuItem_Click);
+            // 
+            // backToolStripMenuItem
+            // 
+            this.backToolStripMenuItem.Name = "backToolStripMenuItem";
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.backToolStripMenuItem.Text = "Back";
+            this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
             // 
             // txtUsersDesc
             // 
@@ -135,18 +144,32 @@
             this.txtNewUser.Text = "Enter new user";
             this.txtNewUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // backToolStripMenuItem
+            // btnSend
             // 
-            this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.backToolStripMenuItem.Text = "Back";
-            this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
+            this.btnSend.Location = new System.Drawing.Point(234, 174);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(112, 23);
+            this.btnSend.TabIndex = 10;
+            this.btnSend.Text = "Send Money";
+            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            // 
+            // cmbSend
+            // 
+            this.cmbSend.FormattingEnabled = true;
+            this.cmbSend.Location = new System.Drawing.Point(12, 174);
+            this.cmbSend.Name = "cmbSend";
+            this.cmbSend.Size = new System.Drawing.Size(202, 21);
+            this.cmbSend.TabIndex = 11;
+            this.cmbSend.Visible = false;
             // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(489, 495);
+            this.Controls.Add(this.cmbSend);
+            this.Controls.Add(this.btnSend);
             this.Controls.Add(this.txtNewUser);
             this.Controls.Add(this.btnNewUser);
             this.Controls.Add(this.cmbBoxRoles);
@@ -179,5 +202,7 @@
         private System.Windows.Forms.Button btnNewUser;
         private System.Windows.Forms.TextBox txtNewUser;
         private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
+        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.ComboBox cmbSend;
     }
 }

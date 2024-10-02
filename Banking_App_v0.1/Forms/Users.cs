@@ -22,6 +22,7 @@ namespace Banking_App_v0._1
         {
             InitializeComponent();
             isSendMoneyMode = sendMoneyMode;
+            PopulateSendMoneyBox();
         }
 
         public class User
@@ -36,6 +37,17 @@ namespace Banking_App_v0._1
                 Rank = r;
                 Name = n;
             }
+        }
+
+        private void PopulateSendMoneyBox()
+        {
+            cmbSend.Items.Insert(0, "£5");
+            cmbSend.Items.Insert(0, "£10");
+            cmbSend.Items.Insert(0, "£20");
+            cmbSend.Items.Insert(0, "£50");
+            cmbSend.Items.Insert(0, "£100");
+            cmbSend.Items.Insert(0, "£500");
+            cmbSend.Items.Insert(0, "£1000");
         }
 
         private void homePageToolStripMenuItem_Click(object sender, EventArgs e)
@@ -133,12 +145,22 @@ namespace Banking_App_v0._1
                 lblRoleGiven.Visible = false;
                 cmbBoxRoles.Visible = false;
                 txtUsersDesc.Visible = false;
+                btnAddRole.Visible = false;
+                btnNewUser.Visible = false;
+                txtNewUser.Visible = false;
+                btnSend.Visible = true;
+                cmbSend.Visible = true;
             }
             else
             {
                 lblRoleGiven.Visible = true;
                 cmbBoxRoles.Visible = true;
                 txtUsersDesc.Visible = true;
+                btnAddRole.Visible = true;
+                btnNewUser.Visible = true;
+                txtNewUser.Visible = true;
+                btnSend.Visible = false;
+                cmbSend.Visible = false;
             }
         }
 
@@ -147,6 +169,18 @@ namespace Banking_App_v0._1
         {
             base.OnLoad(e);
             UpdateControlsVisiblity();
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            if (cmbSend.SelectedIndex == -1)
+            {
+                MessageBox.Show("Drop-down is blank!", "ERROR", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("The money you requested has been sent.", "Money Sent!", MessageBoxButtons.OK);
+            }
         }
     }
 }
