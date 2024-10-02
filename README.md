@@ -20,10 +20,12 @@
 
 
 **User clicks 'Send Money' | user.cs**
+
 ![image](https://github.com/user-attachments/assets/2496c218-4d31-460b-85a6-b3b028bf3107)
 
 
 **Send Money Combo is blank | user.cs**
+
 ![image](https://github.com/user-attachments/assets/a3d22662-caf0-4710-b3e1-17f44fae6acc)
 
 
